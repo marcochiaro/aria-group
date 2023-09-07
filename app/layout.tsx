@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Club Aria",
-  description: "Ruleta en vivo, Slots, apuestas deportivas y mucho mas.",
+  description: "Ruleta en vivo, Slots, apuestas deportivas y mucho mas...",
 };
 
 export default function RootLayout({
@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className="flex min-h-screen flex-col items-center justify-between p-24">
-        {children}
-        <FacebookPixel />
-      </div>
+        <div className="flex min-h-screen flex-col items-center justify-between p-24">
+          {children}
+          <FacebookPixel />
+        </div>
       </body>
     </html>
   );
