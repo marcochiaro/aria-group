@@ -8,7 +8,7 @@ export const URL: Record<string, string> = {
   id_7: "14-b28mnopqr",
   id_8: "14-c3tuvwx56",
   id_9: "14-d4234yzab",
-  id_10: "15-a1defghij",
+  id_10: "15-a1deghij",
   id_11: "15-b2l5678mn",
   id_12: "15-c3qrstuvwx",
   id_13: "15-d4234yzabc",
