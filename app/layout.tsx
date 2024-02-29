@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Club Aria",
-  description: "Ruleta en vivo, Slots, apuestas deportivas y mucho mas...",
+  description: "Ruleta en vivo, Slots, apuestas deportivas y mucho mas.",
 };
 
 export default function RootLayout({

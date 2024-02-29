@@ -3,10 +3,9 @@ import "animate.css";
 import Header from "./components/Header";
 import MinimumChargeCard from "./components/MinimumChargeCard/MinimumChargeCard";
 import CreateAccountButton from "./components/CreateAccountButton/CreateAccountButton";
+import { phoneNumber } from "@/utils/phoneNumber";
+import MinimumWithdrawal from "./components/MinimumWithdrawal/MinimumWithdrawal";
 
-
-
-const phoneNumber: number = 1123350022;
 const Home = () => {
   return (
     <>
@@ -14,11 +13,16 @@ const Home = () => {
 
       <Header />
 
-      {/** Minimo de carga - Card  */}
-      <MinimumChargeCard minimumCharge={200} />
-
-      {/** BOTON - CREAR CUENTA */}
       <CreateAccountButton phoneNumber={phoneNumber} />
+
+      {/** Minimo de carga - Card  */}
+      <div className="flex">
+        {/** Minimo de carga - Card  */}
+        <MinimumChargeCard minimumCharge={500} />
+
+        {/** Minimo de carga - Card  */}
+        <MinimumWithdrawal minimumWithdrawal={2000} />
+      </div>
     </>
   );
 };
