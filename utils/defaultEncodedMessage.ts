@@ -1,5 +1,5 @@
 const defaultMessage: string =
-  "Hola, quiero crear una cuenta en Aria Club! Mi nombre es:  ";
+  "Hola quiero mi usuario ";
 
 const defaultEncodedMessage: string = encodeURIComponent(defaultMessage);
 
