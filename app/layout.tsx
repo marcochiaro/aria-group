@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import FacebookPixel from "./components/FacebookPixel";
+import { Analytics } from "./components/analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <head>
+        <Analytics />
+      </head>
       <body className={inter.className}>
         <div className="flex min-h-screen flex-col items-center justify-between p-24">
           {children}
