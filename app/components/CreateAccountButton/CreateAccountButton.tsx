@@ -46,7 +46,7 @@ const CreateAccountButton: React.FC<CreateAccountButtonProps> = ({ phoneNumber }
         id="createAccountButton"
       >
         <h2 className={`text-l text-zinc-300 font-semibold lg:w-100 hover:text-black`}>
-          <FaWhatsapp className="text-5xl inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none" />
+          <FaWhatsapp className="text-5xl inline-block transition-transform text-black group-hover:translate-x-1 motion-reduce:transform-none" />
           {" "}CREA TU USUARIO
         </h2>
       </a>
