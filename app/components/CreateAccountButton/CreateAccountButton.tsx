@@ -1,7 +1,7 @@
 "use client"
 import { useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
-import defaultEncodedMessage from '@/util/defaultEncodedMessage';
+import defaultEncodedMessage from "../../../utils/defaultEncodedMessage";
 
 // Declaración global para la propiedad beam en el objeto Window
 declare global {
