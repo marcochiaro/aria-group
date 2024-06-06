@@ -3,7 +3,7 @@ import "animate.css";
 import Header from "./components/Header";
 import MinimumChargeCard from "./components/MinimumChargeCard/MinimumChargeCard";
 import CreateAccountButton from "./components/CreateAccountButton/CreateAccountButton";
-import { phoneNumber } from "@/utils/phoneNumber";
+import { phoneNumber, prefix } from "@/utils/phoneNumber";
 import MinimumWithdrawal from "./components/MinimumWithdrawal/MinimumWithdrawal";
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
 
       <Header />
 
-      <CreateAccountButton phoneNumber={phoneNumber} />
+      <CreateAccountButton phoneNumber={phoneNumber} prefix={prefix} />
 
       {/** Minimo de carga - Card  */}
       <div className="flex">
