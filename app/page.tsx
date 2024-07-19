@@ -1,30 +1,32 @@
-import React from "react";
-import "animate.css";
-import Header from "./components/Header";
-import MinimumChargeCard from "./components/MinimumChargeCard/MinimumChargeCard";
-import CreateAccountButton from "./components/CreateAccountButton/CreateAccountButton";
-import { phoneNumber, prefix } from "@/utils/phoneNumber";
-import MinimumWithdrawal from "./components/MinimumWithdrawal/MinimumWithdrawal";
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import FacebookPixel from "./components/FacebookPixel";
+import { Analytics } from "./components/analytics";
 
-const Home = () => {
-  return (
-    <>
-      {/* <Script src="META SCRIPT" /> */}
+const inter = Inter({ subsets: ["latin"] });
 
-      <Header />
-
-      <CreateAccountButton phoneNumber={phoneNumber} prefix={prefix} />
-
-      {/** Minimo de carga - Card  */}
-      <div className="flex">
-        {/** Minimo de carga - Card  */}
-        <MinimumChargeCard minimumCharge={1000} />
-
-        {/** Minimo de carga - Card  */}
-        <MinimumWithdrawal minimumWithdrawal={2000} />
-      </div>
-    </>
-  );
+export const metadata: Metadata = {
+  title: "Club Aria",
+  description: "Ruleta en vivo, Slots, apuestas deportivas y mucho mas.",
 };
 
-export default Home;
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+       <head>
+        <Analytics />
+      </head>
+      <body className={inter.className}>
+        <div className="flex min-h-screen flex-col items-center justify-between p-24">
+          {children}
+          <FacebookPixel />
+        </div>
+      </body>
+    </html>
+  );
+}
