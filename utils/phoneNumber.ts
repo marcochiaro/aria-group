@@ -1,3 +1,3 @@
-export const phoneNumber: number = 1133838283;
+export const phoneNumber: number = 1134221783;
 
-export const prefix: number = 54;
+export const prefix: number = 549;
