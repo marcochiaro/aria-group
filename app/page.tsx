@@ -20,7 +20,7 @@ const Home = () => {
         <MinimumChargeCard minimumCharge={2000} />
 
         {/** Minimo de carga - Card  */}
-        <MinimumWithdrawal minimumWithdrawal={2000} />
+        <MinimumWithdrawal minimumWithdrawal={3500} />
       </div>
     </>
   );
