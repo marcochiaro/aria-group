@@ -11,7 +11,7 @@ const MinimumWithdrawal: React.FC<MinimumWithdrawalProps> = ({
       <a className="group rounded-lg border border-transparent px-5 py-4">
         <h2 className={`mb-3 text-2xl font-semibold`}>
           Mínimo de retiro{" "}
-          <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+          <span className="flex justify-center transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             ${minimumWithdrawalString}
           </span>
         </h2>
